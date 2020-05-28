@@ -1,0 +1,46 @@
+
+    body {
+      background-image: url("images/Vectorpaint.jpg");
+      margin: 50px;
+    }
+
+    img {
+      border: 1px solid black;
+      border-radius: 4px;
+      padding: 1px;
+      width:300px;height:300px;
+    }
+    h1,h3 {
+      color: white;
+    }
+
+    .container {
+      position: left;
+      text-align: center;
+      color: white;
+    }
+
+    .bottom-left {
+      position: left;
+      bottom: 8px;
+      left: 16px;
+      color: white;
+    }
+
+    * {
+      box-sizing: border-box;
+      
+    }
+
+    .column {
+      float: left;
+      width: 33.33%;
+      padding: 5px;
+    }
+
+    
+    .row::after {
+      content: "";
+      clear: both;
+      display: table;
+    }

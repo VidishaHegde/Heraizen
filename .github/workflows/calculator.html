@@ -1,0 +1,78 @@
+<html>
+
+<head>
+    <title>Javascript</title>
+    <script src="calculator.js"></script>
+    <style>
+         body { margin: 15px; padding: 20px; }
+        div {
+            background-color: lightgrey;
+            width: 300px;
+            border: 15px solid rgb(0, 31, 51);
+            padding: 50px;
+            margin: 20px;
+            position: relative;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <h3>Calculator</h3>
+    <div>
+        <form action="PayslipServlet" method="get">
+            Enter first number: <input type="text" name="fnum" id="fnum"><br />
+            Enter second number: <input type="text" name="snum" id="snum"><br />
+            <br>
+            <input type="button" style="background-color: rgb(67, 163, 196); color:black" value="Add" onClick="add()">
+            <input type="button" style="background-color: rgb(67, 163, 196); color:black" value="Subtract" onClick="sub()">
+            <input type="button" style="background-color: rgb(67, 163, 196); color:black" value="Multiply" onClick="mul()">
+            <input type="button" style="background-color: rgb(67, 163, 196); color:black" value="Divide" onClick="div()">
+            <input type="button" style="background-color: rgb(67, 163, 196); color:black" value="Modulus" onClick="mod()">
+            <br>
+            <br>
+            Result: <span id="result"></span>
+
+
+        </form>
+    </div>
+    <br>
+    <h3>Tables</h3>
+    <div>
+        <form action="PayslipServlet" method="get">
+            Enter number: <input type="text" name="num" id="num"><br />
+           
+            <br>
+            <input type="button" style="background-color: rgb(67, 163, 196); color:black" value="Tables" onClick="tab()">
+            
+            <br>
+            <br>
+           
+             <span id="tresult"></span>
+
+
+        </form>
+    </div>
+
+    <h3>Currency converter</h3>
+    <div>
+        <form action="PayslipServlet" method="get">
+            Enter value in INR: <input type="text" name="cur" id="cur"><br />
+           
+            <br>
+            <input type="button" style="background-color: rgb(67, 163, 196); color:black" value="US dollar" onClick="USd()">
+            <input type="button" style="background-color: rgb(67, 163, 196); color:black" value="Euro" onClick="Euro()">
+            <input type="button" style="background-color: rgb(67, 163, 196); color:black" value="British Pound " onClick="Bpound()">
+            <input type="button" style="background-color: rgb(67, 163, 196); color:black" value="Yen" onClick="Yen()">
+            
+            <br>
+            <br>
+           
+            Value: <span id="cresult"></span>
+
+
+        </form>
+    </div>
+</body>
+
+</html>
